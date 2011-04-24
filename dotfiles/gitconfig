@@ -1,0 +1,7 @@
+[user]
+	name = Victor Boivie
+	email = victor@boivie.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
