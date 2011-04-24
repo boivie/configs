@@ -5,3 +5,11 @@
 	diff = auto
 	status = auto
 	branch = auto
+
+[rerere]
+	enabled = 1
+
+[alias]
+	co = checkout
+	ci = commit -v
+	st = status -sb
