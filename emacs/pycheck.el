@@ -18,4 +18,8 @@
 (global-set-key [f10] 'flymake-goto-prev-error)
 (global-set-key [f11] 'flymake-goto-next-error)
 
+;; Disable flymake's popup (may make emacs hang on Mac OS X)
+;; http://koansys.com/tech/emacs-hangs-on-flymake-under-os-x
+(setq flymake-gui-warnings-enabled nil)
+
 (provide 'pycheck)
