@@ -6,11 +6,18 @@ DIR=$(pwd)
 cd $DIR/dotfiles/
 for i in *
 do
-    ln -s $DIR/dotfiles/$i ~/.$i
+    if [ -e ~/.$i ]; then
+      echo Will not link ~/.$i since it already exists.
+    else
+      echo "linking $i -> ~/.$i"
+      ln -s $DIR/dotfiles/$i ~/.$i
+    fi
 done
 
 # Add link to ~/bin/
-ln -s $DIR/bin/ ~/bin
+if [ ! -e ~/bin ]; then
+    ln -s $DIR/bin/ ~/bin
+fi
 
 # add git commit-msg hook to local git
 ln -s $DIR/bin/commit-msg $DIR/.git/hooks/
