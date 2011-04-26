@@ -2,8 +2,8 @@
 
 ## repo default configuration
 ##
-REPO_URL='git://android.git.kernel.org/tools/repo.git'
-REPO_REV='stable'
+REPO_URL='git://seldlx1657/repo.git'
+REPO_REV='testing'
 
 # Copyright (C) 2008 Google Inc.
 #
@@ -109,17 +109,12 @@ group = init_optparse.add_option_group('Manifest options')
 group.add_option('-u', '--manifest-url',
                  dest='manifest_url',
                  help='manifest repository location', metavar='URL')
-group.add_option('-o', '--origin',
-                 dest='manifest_origin',
-                 help="use REMOTE instead of 'origin' to track upstream",
-                 metavar='REMOTE')
 group.add_option('-b', '--manifest-branch',
                  dest='manifest_branch',
                  help='manifest branch or revision', metavar='REVISION')
 group.add_option('-m', '--manifest-name',
                  dest='manifest_name',
-                 help='initial manifest file (deprecated)',
-                 metavar='NAME.xml')
+                 help='initial manifest file', metavar='NAME.xml')
 group.add_option('--mirror',
                  dest='mirror', action='store_true',
                  help='mirror the forrest')
@@ -136,7 +131,7 @@ group.add_option('--repo-branch',
                  dest='repo_branch',
                  help='repo branch or revision', metavar='REVISION')
 group.add_option('--no-repo-verify',
-                 dest='no_repo_verify', action='store_true',
+                 dest='no_repo_verify', action='store_true', default = True,
                  help='do not verify repo source code')
 
 
@@ -149,7 +144,7 @@ def _Init(args):
   """Installs repo by cloning it over the network.
   """
   opt, args = init_optparse.parse_args(args)
-  if args or not opt.manifest_url:
+  if args:
     init_optparse.print_usage()
     sys.exit(1)
 

@@ -1,0 +1,3 @@
+Host github.com
+  ProxyCommand corkscrew proxy.global.sonyericsson.net 8080 %h %p
+

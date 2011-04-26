@@ -1,10 +1,29 @@
-[user]
-	name = Victor Boivie
-	email = victor@boivie.com
+[url "ssh://victor.boivie@android-seld.sonyericsson.net:29418/"]
+	insteadOf = git://review.sonyericsson.net/
+	insteadOf = git://android.git.kernel.org/
+	insteadOf = ssh://android-seld.sonyericsson.net/
+        insteadOf = git://codeaurora.org/
+
 [color]
 	diff = auto
 	status = auto
 	branch = auto
+
+[user]
+	name = Victor Boivie
+	email = victor.boivie@sonyericsson.com
+[core]
+	gitproxy = semcproxy for codeaurora.org
+	gitproxy = semcproxy for kernel.org
+	gitproxy = semcproxy for gitorious.org
+	gitproxy = semcproxy for github.com
+
+[repo]
+	reference = /home/victor/r/mirrors/ginger-qc/
+	default-manifest-url = git://review.sonyericsson.net/platform/manifest.git
+	default-manifest-server = http://seldlx1657.corpusers.net:8000
+[rebase]
+	autosquash = 1
 
 [rerere]
 	enabled = 1
