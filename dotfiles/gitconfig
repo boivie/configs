@@ -13,3 +13,5 @@
 	co = checkout
 	ci = commit -v
 	st = status -sb
+[rebase]
+	autosquash = True
