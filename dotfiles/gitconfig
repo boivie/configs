@@ -4,6 +4,9 @@
 	insteadOf = ssh://android-seld.sonyericsson.net/
         insteadOf = git://codeaurora.org/
 
+[url "ssh://victor.boivie@review.sonyericsson.net:29418/"]
+        pushInsteadOf = git://review.sonyericsson.net/
+
 [color]
 	diff = auto
 	status = auto
