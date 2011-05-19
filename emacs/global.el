@@ -1,3 +1,6 @@
+;; start server (emacsclient -n -> open file)
+(server-start)
+
 ;; disable auto-save files (#foo#)
 (setq auto-save-default nil)
 
