@@ -8,4 +8,5 @@
 (require 'global)
 (require 'modes)
 (require 'pycheck)
+(require 'remember-frame)
 (require 'bindings)

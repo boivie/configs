@@ -1,6 +1,9 @@
 ;; buffer menu
 (global-set-key (kbd "C-x C-b") 'buffer-menu)
 
+;; remember
+(global-set-key (kbd "C-c C-r") 'make-remember-frame)
+
 ;; font size
 (global-set-key (kbd "C-+") 'text-scale-adjust)
 (global-set-key (kbd "C--") 'text-scale-adjust)
