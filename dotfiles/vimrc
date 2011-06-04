@@ -1,0 +1,9 @@
+syntax on
+set autoindent
+set sw=4
+set hlsearch
+set incsearch
+set textwidth=70
+set cindent
+set background=dark
+set number
