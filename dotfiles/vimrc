@@ -3,8 +3,15 @@ set autoindent
 set sw=4
 set hlsearch
 set incsearch
-set textwidth=70
+" Warn when getting close to 80 columns of width..
+let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
+let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 set cindent
 set background=dark
 set number
 set ruler
+" Color unnecessary tabs and spaces.
+highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+" Show trailing whitespace and spaces before a tab in every buffer:
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t/
