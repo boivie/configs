@@ -19,6 +19,9 @@ if [ ! -e ~/bin ]; then
     ln -s $DIR/bin/ ~/bin
 fi
 
+# add git commit-msg hook to local git
+ln -s $DIR/bin/commit-msg $DIR/.git/hooks/
+
 #echo "git push" > $DIR/.git/hooks/post-commit
 #chmod 755 $DIR/.git/hooks/post-commit
 

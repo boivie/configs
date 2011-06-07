@@ -34,6 +34,18 @@
 [alias]
 	co = checkout
 	ci = commit -v
-	st = status -sb
+	cia = commit -v -a
+	s = status
+	d = diff
+	dc = diff --cached
+	serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
+	whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+	whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+	sortdiff = !sh -c 'git diff "$@" | grep "^[+-]" | sort --key=1.2 | uniq -u -s1'
+	lol = log --pretty=oneline --abbrev-commit --graph --decorate
+	fixup = !sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+	squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+	ri = rebase --interactive
+
 [rebase]
 	autosquash = True
