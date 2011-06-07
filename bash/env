@@ -16,3 +16,6 @@ EDITOR="pico"
 PAGER="less -R"
 LESSHISTFILE="-"
 export EDITOR PAGER LESSHISTFILE
+
+# path
+export PATH=$PATH:~/bin/
