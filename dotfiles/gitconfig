@@ -32,9 +32,9 @@
 	enabled = 1
 
 [alias]
-	co = checkout
 	ci = commit -v
 	cia = commit -v -a
+	ciaa = commit -v -a --amend
 	s = status
 	d = diff
 	dc = diff --cached
