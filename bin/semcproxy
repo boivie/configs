@@ -1,10 +1,10 @@
 #!/bin/sh
 #
 # semcproxy <host> <port>
-# 
+#
 # Proxies stdio requests through the http proxy @ SEMC, e g git
-#  Put it in your path and execute 'git config --global core.gitproxy semcproxy' 
+#  Put it in your path and execute 'git config --global core.gitproxy semcproxy'
 #
 # 23059116 - Daniel Olsson
-exec socat STDIO PROXY:proxy.global.sonyericsson.net:$1:$2,proxyport=8080
+exec corkscrew proxy.global.sonyericsson.net 8080 $1 $2 /home/victor/.corkscrew-auth
 
