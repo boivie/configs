@@ -10,4 +10,6 @@
 (setq auto-mode-alist (cons '("\\.h$" . c++-mode) auto-mode-alist))
 (require 'protobuf-mode)
 
+(column-number-mode t)
+
 (provide 'modes)
