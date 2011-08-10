@@ -21,10 +21,14 @@
 	gitproxy = semcproxy for gitorious.org
 	gitproxy = semcproxy for github.com
 
-[repo]
-	reference = /home/victor/r/mirrors/ginger-qc/
-	default-manifest-url = git://review.sonyericsson.net/platform/manifest.git
-	default-manifest-server = http://seldlx1657.corpusers.net:8000
+[repo-manifest "ste"]
+	url = git://review.sonyericsson.net/platform/manifest.git
+	reference= /home/victor/r/mirrors/ginger-ste/
+
+[repo-manifest "default"]
+	url = git://review.sonyericsson.net/platform/manifest.git
+	reference= /home/victor/r/mirrors/ginger-qc/
+
 [rebase]
 	autosquash = 1
 
