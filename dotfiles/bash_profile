@@ -7,6 +7,8 @@ if [ -d ~/configs/bash.d ]; then
     unset i
 fi
 
+export PATH=~/bin:$PATH
+
 # MacPorts Installer addition on 2011-08-07_at_16:28:18:
 #  adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
