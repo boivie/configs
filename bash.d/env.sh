@@ -17,3 +17,7 @@ PAGER="less -R"
 LESSHISTFILE="-"
 PS1="\u@\h\w$ "
 export EDITOR PAGER LESSHISTFILE PS1
+
+# node.js
+NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
+export NODE_PATH
