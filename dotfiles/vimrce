@@ -1,0 +1,7 @@
+set hlsearch
+set incsearch
+set background=dark
+set nocompatible
+set mouse=
+match ToDo '\%>78v.\+'
+autocmd BufNewFile,BufRead /home/elutfre/myrepos/source-gerrit/Documentation/*.txt set filetype=asciidoc

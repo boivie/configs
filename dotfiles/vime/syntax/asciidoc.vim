@@ -1,0 +1,1 @@
+../bundle/vim-asciidoc/syntax/asciidoc.vim
