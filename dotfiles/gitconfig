@@ -29,3 +29,5 @@
 
 [rebase]
 	autosquash = True
+[push]
+	default = current
