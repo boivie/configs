@@ -10,6 +10,7 @@
 
 (setq auto-mode-alist (cons '("\\.h$" . c++-mode) auto-mode-alist))
 (require 'protobuf-mode)
+(require 'thrift-mode)
 
 (column-number-mode t)
 
