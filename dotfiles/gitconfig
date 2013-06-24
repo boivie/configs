@@ -1,7 +1,11 @@
-[core]
-	editor = vim
+[color]
+	ui = auto
 [user]
 	name = Fredrik Luthander
 	email = fredrik.luthander@ericsson.com
-[color]
-	ui = auto
+[url "ssh://selngerrit-mirror.mo.sw.ericsson.se:29418/"]
+	insteadOf = selngerrit:
+[url "ssh://selngerrit.mo.sw.ericsson.se:29418/"]
+	pushInsteadOf = selngerrit:
+[core]
+	pager = less -+-M -I -FSRX

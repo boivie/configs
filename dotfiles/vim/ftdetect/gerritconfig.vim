@@ -1,0 +1,1 @@
+../plugin/gerrit/ftdetect/gerritconfig.vim

@@ -3,5 +3,11 @@ set incsearch
 set background=dark
 set nocompatible
 set mouse=
+syntax on
+au BufNewFile,BufRead gerrit.config set filetype=gitconfig     
+au BufNewFile,BufRead replication.config set filetype=gitconfig
+au BufNewFile,BufRead secure.config set filetype=gitconfig
+au BufNewFile,BufRead project.config set filetype=gitconfig
+highlight ToDo ctermbg=yellow guibg=yellow
 match ToDo '\%>78v.\+'
-autocmd BufNewFile,BufRead /home/elutfre/myrepos/source-gerrit/Documentation/*.txt set filetype=asciidoc
+match ToDo '\s\+$'
