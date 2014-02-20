@@ -11,6 +11,11 @@
 (setq auto-mode-alist (cons '("\\.h$" . c++-mode) auto-mode-alist))
 (require 'protobuf-mode)
 (require 'thrift-mode)
+(require 'less-css-mode)
+
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
 (column-number-mode t)
 
