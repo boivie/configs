@@ -4,6 +4,11 @@ function jgrep()
     find . -type f -name "*\.java" -print0 | xargs -0 grep --color -n "$@"
 }
 
+function sgrep()
+{
+    find . -type f -name "*\.scala" -print0 | xargs -0 grep --color -n "$@"
+}
+
 function cgrep()
 {
     find . -type f \( -name '*.c' -o -name '*.cc' -o -name '*.cpp' -o -name '*.h' \) -print0 | xargs -0 grep --color -n "$@"

@@ -6,9 +6,11 @@
 (require 'git)
 (require 'git-blame)
 (require 'php-mode)
+(require 'wide-column)
 
 (setq auto-mode-alist (cons '("\\.h$" . c++-mode) auto-mode-alist))
 (require 'protobuf-mode)
+(require 'thrift-mode)
 
 (column-number-mode t)
 
