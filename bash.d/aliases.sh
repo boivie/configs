@@ -9,4 +9,4 @@ alias gb='git branch'
 alias gba='git branch -a'
 
 # emacs
-alias em='emacsclient -n'
+alias em='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -n'
