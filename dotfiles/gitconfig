@@ -2,7 +2,6 @@
 	insteadOf = git://review.sonyericsson.net/
 	insteadOf = git://android.git.kernel.org/
 	insteadOf = ssh://android-seld.sonyericsson.net/
-        insteadOf = git://codeaurora.org/
 
 [url "ssh://victor.boivie@review.sonyericsson.net:29418/"]
         pushInsteadOf = git://review.sonyericsson.net/
@@ -14,23 +13,12 @@
 
 [user]
 	name = Victor Boivie
-	email = victor.boivie@sonyericsson.com
+	email = victor.boivie@sonymobile.com
 [core]
 	gitproxy = semcproxy for codeaurora.org
 	gitproxy = semcproxy for kernel.org
 	gitproxy = semcproxy for gitorious.org
 	gitproxy = semcproxy for github.com
-
-[repo-manifest "ste"]
-	url = git://review.sonyericsson.net/platform/manifest.git
-	reference= /home/victor/r/mirrors/ginger-ste/
-
-[repo-manifest "default"]
-	url = git://review.sonyericsson.net/platform/manifest.git
-	reference= /home/victor/r/mirrors/ginger-qc/
-
-[rebase]
-	autosquash = 1
 
 [rerere]
 	enabled = 1
@@ -57,3 +45,8 @@
 	autosquash = True
 [push]
 	default = current
+
+[http]
+	proxy = http://localhost:3128
+[https]
+	proxy = http://localhost:3128
