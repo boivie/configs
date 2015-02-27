@@ -21,11 +21,3 @@ export EDITOR PAGER LESSHISTFILE PS1
 # node.js
 NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 export NODE_PATH
-
-# ec2-api-tools
-export JAVA_HOME="$(/usr/libexec/java_home)"
-export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
-export EC2_CERT="$(/bin/ls "$HOME"/.ec2/cert-*.pem | /usr/bin/head -1)"
-export EC2_HOME="/usr/local/Library/LinkedKegs/ec2-api-tools/jars"
-EC2_REGION="eu-west-1"
-export EC2_URL="https://${EC2_REGION}.ec2.amazonaws.com/"
