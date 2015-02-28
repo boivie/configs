@@ -29,3 +29,4 @@ export EC2_CERT="$(/bin/ls "$HOME"/.ec2/cert-*.pem | /usr/bin/head -1)"
 export EC2_HOME="/usr/local/Library/LinkedKegs/ec2-api-tools/jars"
 EC2_REGION="eu-west-1"
 export EC2_URL="https://${EC2_REGION}.ec2.amazonaws.com/"
+export GOPATH=$HOME/r/go

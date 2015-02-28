@@ -13,6 +13,11 @@
 (require 'thrift-mode)
 (require 'less-css-mode)
 
+(require 'go-mode)
+(setq gofmt-command "/usr/local/bin/gofmt")
+(add-hook 'before-save-hook #'gofmt-before-save)
+
+
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
