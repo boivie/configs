@@ -3,6 +3,10 @@
   (push "/opt/local/bin" exec-path)
   (push "/usr/local/git/bin" exec-path))
 
+(setq url-proxy-services '(("no_proxy" . "corpusers\\.net")
+                           ("http" . "localhost:3128")
+                           ("https" . "localhost:3128")))
+
 (setq load-path  (cons (expand-file-name "~/configs/emacs") load-path))
 
 (defun visit-term-buffer ()

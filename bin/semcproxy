@@ -6,5 +6,5 @@
 #  Put it in your path and execute 'git config --global core.gitproxy semcproxy'
 #
 # 23059116 - Daniel Olsson
-exec corkscrew proxy.global.sonyericsson.net 8080 $1 $2 /home/victor/.corkscrew-auth
+exec corkscrew localhost 3128 $1 $2
 

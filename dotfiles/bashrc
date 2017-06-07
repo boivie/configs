@@ -8,3 +8,6 @@ if [ -d ~/configs/bash.d ]; then
 fi
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# added by travis gem
+[ -f /Users/23056791/.travis/travis.sh ] && source /Users/23056791/.travis/travis.sh

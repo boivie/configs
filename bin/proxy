@@ -1,0 +1,18 @@
+#!/bin/bash
+
+case $0 in
+  *-on)
+      echo "Turning proxy on"
+      sed -i -e 's/^[#]*NoProxy.*/NoProxy localhost, 127.0.0.*, 10.*, 192.168.*, *.sonyericsson.net, *.corpusers.net, *.sonymobile.net/' /usr/local/etc/cntlm.conf
+      cntlm -f
+      ;;
+  *-off)
+      echo "Turning proxy off"
+      sed -i -e 's/^[#]*NoProxy.*/NoProxy */' /usr/local/etc/cntlm.conf
+      cntlm -f
+      ;;
+  *)
+      echo "Please don't call $0 directly"
+      exit
+      ;;
+esac

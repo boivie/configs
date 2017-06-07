@@ -14,4 +14,7 @@
 
 (column-number-mode t)
 
+(add-to-list 'load-path "~/configs/emacs/scala-mode2/")
+(require 'scala-mode2)
+
 (provide 'modes)

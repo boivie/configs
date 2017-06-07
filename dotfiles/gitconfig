@@ -18,7 +18,9 @@
 	gitproxy = semcproxy for codeaurora.org
 	gitproxy = semcproxy for kernel.org
 	gitproxy = semcproxy for gitorious.org
-	gitproxy = semcproxy for github.com
+	pager = diff-so-fancy | less --tabs=1,5 -R
+#	gitproxy = semcproxy for git.apache.org
+#	gitproxy = semcproxy for github.com
 
 [rerere]
 	enabled = 1
@@ -40,13 +42,20 @@
 	ri = rebase --interactive
 	rc = rebase --continue
 	cp = cherry-pick
+	dsf = "!git diff --color $@ | diff-so-fancy"
+	prb = pull --rebase
 
 [rebase]
 	autosquash = True
 [push]
 	default = current
 
-[http]
-	proxy = http://localhost:3128
 [https]
 	proxy = http://localhost:3128
+[credential]
+	helper = osxkeychain
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22

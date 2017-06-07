@@ -23,3 +23,14 @@ export PATH=$PATH:~/bin/
 # node.js
 NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 export NODE_PATH
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+export GOPATH="$HOME/r/go/"
+export PATH=$PATH:$GOPATH/bin
+
+# cntlm proxy
+export http_proxy="http://localhost:3128"
+export https_proxy="http://localhost:3128"
+export no_proxy="sonyericsson.net,corpusers.net,10.129,localhost,192.168"
+#localhost, 127.0.0.*, 10.*, 192.168.*, *.sonyericsson.net, *.corpusers.net, *.sonymobile.net
+
