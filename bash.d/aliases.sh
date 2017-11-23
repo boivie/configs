@@ -7,6 +7,7 @@ alias g='git'
 alias gst='git st'
 alias gb='git branch'
 alias gba='git branch -a'
+complete -F _git g
 
 # Work stuff
 alias activate-proxy='source ~/bin/activate_proxy.sh'
@@ -29,5 +30,9 @@ complete -F _list_aws_profiles activate-aws
 # docker
 alias dattach='docker attach --sig-proxy=false'
 alias d='docker'
+complete -F _docker d
 
 alias jqless="jq -C . | less -R"
+
+alias k='kubectl "--context=${KUBECTL_CONTEXT:-$(kubectl config current-context)}" ${KUBECTL_NAMESPACE/[[:alnum:]-]*/--namespace=${KUBECTL_NAMESPACE}}'
+complete -F __start_kubectl k

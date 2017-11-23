@@ -1,3 +1,6 @@
+# direnv
+eval "$(direnv hook bash)"
+
 if [ -d ~/configs/bash.d ]; then
     for i in ~/configs/bash.d/*.sh; do
         if [ -r $i ]; then
@@ -11,3 +14,4 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # added by travis gem
 [ -f /Users/23056791/.travis/travis.sh ] && source /Users/23056791/.travis/travis.sh
+

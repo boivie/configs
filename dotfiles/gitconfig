@@ -20,7 +20,7 @@
 	gitproxy = semcproxy for gitorious.org
 	pager = diff-so-fancy | less --tabs=1,5 -R
 #	gitproxy = semcproxy for git.apache.org
-#	gitproxy = semcproxy for github.com
+	gitproxy = semcproxy for github.com
 
 [rerere]
 	enabled = 1

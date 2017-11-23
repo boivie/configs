@@ -18,7 +18,7 @@ LESSHISTFILE="-"
 PS1="\u@\h\w$ "
 export EDITOR PAGER LESSHISTFILE PS1
 
-export PATH=$PATH:~/bin/
+export PATH=$PATH:~/bin
 
 # node.js
 NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
@@ -31,6 +31,9 @@ export PATH=$PATH:$GOPATH/bin
 # cntlm proxy
 export http_proxy="http://localhost:3128"
 export https_proxy="http://localhost:3128"
+export ALL_PROXY="http://localhost:3128"
 export no_proxy="sonyericsson.net,corpusers.net,10.129,localhost,192.168"
+export SBT_OPTS="-Dhttp.proxyHost=localhost -Dhttp.proxyPort=3128 -Dhttps.proxyHost=localhost -Dhttps.proxyPort=3128"
+
 #localhost, 127.0.0.*, 10.*, 192.168.*, *.sonyericsson.net, *.corpusers.net, *.sonymobile.net
 

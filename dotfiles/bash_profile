@@ -14,3 +14,13 @@ export PATH=~/bin:/usr/local/bin:$PATH
 # activate rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+
+# added by Anaconda3 4.4.0 installer
+export PATH="/Users/23056791/anaconda/bin:$PATH"
+
+# direnv
+eval "$(direnv hook bash)"
+
+# bash_autocompletion
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+

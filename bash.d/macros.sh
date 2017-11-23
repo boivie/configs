@@ -40,3 +40,18 @@ case `uname -s` in
 
         ;;
 esac
+
+function somc-proxy() {
+    export http_proxy=http://proxy.global.sonyericsson.net:8080
+    export https_proxy=http://proxy.global.sonyericsson.net:8080
+    export HTTP_PROXY=http://proxy.global.sonyericsson.net:8080
+    export HTTPS_PROXY=http://proxy.global.sonyericsson.net:8080
+}
+
+function cntlm-proxy() {
+    export http_proxy=http://localhost:3128
+    export https_proxy=http://localhost:3128
+    export HTTP_PROXY=http://localhost:3128
+    export HTTPS_PROXY=http://localhost:3128
+}
+
