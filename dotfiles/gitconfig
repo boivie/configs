@@ -26,8 +26,14 @@
 	ri = rebase --interactive
 	rc = rebase --continue
 	cp = cherry-pick
+	exec = "!exec "
+	root = !pwd
+	prb = pull --rebase
 
 [rebase]
 	autosquash = True
+	autoStash = true
 [push]
-	default = current
+	default = simple
+[core]
+	quotepath = false
